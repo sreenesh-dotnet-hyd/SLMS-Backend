@@ -1,6 +1,6 @@
 ﻿namespace IdentityAccessNotificationDbService.Models
 {
-    public class notifications
+    public class Notifications
     {
         public int id   { get; set; }
         public int user_id { get; set; }
