@@ -1,0 +1,6 @@
+@AssignmentsInventoryMicroService_HostAddress = http://localhost:5018
+
+GET {{AssignmentsInventoryMicroService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
