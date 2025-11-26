@@ -1,0 +1,6 @@
+@IdentityAccessNotificationDbService_HostAddress = http://localhost:5161
+
+GET {{IdentityAccessNotificationDbService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
