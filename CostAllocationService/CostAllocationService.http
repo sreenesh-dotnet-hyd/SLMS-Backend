@@ -1,0 +1,6 @@
+@CostAllocationService_HostAddress = http://localhost:5252
+
+GET {{CostAllocationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
