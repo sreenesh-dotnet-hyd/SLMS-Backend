@@ -1,4 +1,5 @@
-using AssignmentsInventoryMicroService.Data;
+﻿using AssignmentsInventoryMicroService.Data;
+using AssignmentsInventoryMicroService.Middleware;
 using AssignmentsInventoryMicroService.Models;
 using AssignmentsInventoryMicroService.Repositories;
 using Microsoft.EntityFrameworkCore;
@@ -6,21 +7,21 @@ using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
+// Add controllers and JSON options
 builder.Services.AddControllers()
     .AddJsonOptions(opts =>
     {
-        // avoid object cycle issues
         opts.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
     });
 
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-// SQL Server � code first
+// Register DbContext
 builder.Services.AddDbContext<AssignmentsInventoryDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("AssignmentsInventoryDb")));
 
-// TODO: register repositories & services (shown below)
+// Register repositories
 builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
 
 var app = builder.Build();
@@ -31,18 +32,26 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// 🔹 Add global exception handling BEFORE routing & HTTPS redirection
+app.UseGlobalExceptionHandling();
+
 app.UseHttpsRedirection();
+
+// JWT will be added later here:
+// app.UseAuthentication();
+
 app.UseAuthorization();
+
 app.MapControllers();
 
-
+// 🔹 Seeding (only runs if DB empty)
 using (var scope = app.Services.CreateScope())
 {
     var db = scope.ServiceProvider.GetRequiredService<AssignmentsInventoryDbContext>();
+    db.Database.EnsureCreated(); // Ensures DB exists
 
     if (!db.Devices.Any())
     {
-        // Dummy data for Devices
         var device1 = new Device
         {
             DeviceId = Guid.NewGuid(),
@@ -56,19 +65,17 @@ using (var scope = app.Services.CreateScope())
 
         db.Devices.Add(device1);
 
-        // Dummy Installations
         db.Installations.Add(new Installation
         {
             InstallationId = Guid.NewGuid(),
             DeviceId = device1.DeviceId,
-            ProductId = Guid.NewGuid(),       // Dummy
-            EntitlementId = Guid.NewGuid(),   // Dummy
+            ProductId = Guid.NewGuid(),
+            EntitlementId = Guid.NewGuid(),
             Version = "1.0",
             InstallDate = DateTime.UtcNow.AddDays(-10),
             LastSeen = DateTime.UtcNow
         });
 
-        // Dummy Assignment
         db.UserAssignments.Add(new UserAssignment
         {
             AssignmentId = Guid.NewGuid(),
@@ -80,7 +87,6 @@ using (var scope = app.Services.CreateScope())
             Status = "Active"
         });
 
-        // Dummy UsageEvent
         db.UsageEvents.Add(new UsageEvent
         {
             UsageEventId = Guid.NewGuid(),
@@ -91,7 +97,6 @@ using (var scope = app.Services.CreateScope())
             Timestamp = DateTime.UtcNow
         });
 
-        // Dummy Audit Snapshot
         db.ComplianceAudits.Add(new ComplianceAuditSnapshot
         {
             AuditId = Guid.NewGuid(),
