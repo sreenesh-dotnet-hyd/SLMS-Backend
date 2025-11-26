@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AssignmentsInventoryMicroService.Migrations
 {
     [DbContext(typeof(AssignmentsInventoryDbContext))]
-    [Migration("20251126100454_firstTest")]
+    [Migration("20251126105659_firstTest")]
     partial class firstTest
     {
         /// <inheritdoc />
@@ -57,100 +57,100 @@ namespace AssignmentsInventoryMicroService.Migrations
                     b.HasData(
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000001"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000001"),
                             AssignedCount = 50,
                             EntitlementsPurchased = 55,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             SnapshotTime = new DateTime(2024, 10, 3, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 45
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000002"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000002"),
                             AssignedCount = 60,
                             EntitlementsPurchased = 55,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             SnapshotTime = new DateTime(2024, 11, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "OverLicensed",
                             UsedCount = 40
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000003"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000003"),
                             AssignedCount = 20,
                             EntitlementsPurchased = 20,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7707"),
                             SnapshotTime = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 18
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000004"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000004"),
                             AssignedCount = 25,
                             EntitlementsPurchased = 20,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7707"),
                             SnapshotTime = new DateTime(2024, 12, 25, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "OverLicensed",
                             UsedCount = 5
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000005"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000005"),
                             AssignedCount = 5,
                             EntitlementsPurchased = 5,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7704"),
                             SnapshotTime = new DateTime(2024, 9, 3, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 5
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000006"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000006"),
                             AssignedCount = 7,
                             EntitlementsPurchased = 5,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7704"),
                             SnapshotTime = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "UnderLicensed",
                             UsedCount = 7
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000007"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000007"),
                             AssignedCount = 30,
                             EntitlementsPurchased = 30,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000005"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7705"),
                             SnapshotTime = new DateTime(2024, 12, 18, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 29
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000008"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000008"),
                             AssignedCount = 35,
                             EntitlementsPurchased = 35,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000009"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7709"),
                             SnapshotTime = new DateTime(2024, 12, 18, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 32
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000009"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-000000000009"),
                             AssignedCount = 15,
                             EntitlementsPurchased = 20,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000006"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7706"),
                             SnapshotTime = new DateTime(2024, 11, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "OverLicensed",
                             UsedCount = 3
                         },
                         new
                         {
-                            AuditId = new Guid("80000000-0000-0000-0000-000000000010"),
+                            AuditId = new Guid("fe10dc32-ab45-4e67-8901-00000000000a"),
                             AssignedCount = 10,
                             EntitlementsPurchased = 10,
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000008"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7708"),
                             SnapshotTime = new DateTime(2024, 11, 17, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Compliant",
                             UsedCount = 9
@@ -191,102 +191,102 @@ namespace AssignmentsInventoryMicroService.Migrations
                     b.HasData(
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000001"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000001"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789001"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c1"),
                             DeviceType = "Desktop",
                             Hostname = "DESKTOP-IT-01",
                             LastSeen = new DateTime(2025, 1, 1, 9, 10, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000001"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334401"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000002"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000002"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789002"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c2"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-FIN-01",
                             LastSeen = new DateTime(2025, 1, 1, 9, 20, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000002"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334402"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000003"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000002"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789003"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c2"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-FIN-02",
                             LastSeen = new DateTime(2025, 1, 1, 8, 30, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000007"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334407"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000004"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000003"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789004"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c3"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-HR-01",
                             LastSeen = new DateTime(2025, 1, 1, 8, 0, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000003"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334403"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000005"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789005"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c4"),
                             DeviceType = "Server",
                             Hostname = "SERVER-APP-01",
                             LastSeen = new DateTime(2025, 1, 1, 7, 0, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000004"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334404"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000006"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789006"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c4"),
                             DeviceType = "Server",
                             Hostname = "SERVER-DB-01",
                             LastSeen = new DateTime(2024, 12, 31, 21, 0, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000004"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334404"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000007"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789007"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c4"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-ENG-01",
                             LastSeen = new DateTime(2025, 1, 1, 9, 5, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000005"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334405"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000008"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789008"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c4"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-ENG-02",
                             LastSeen = new DateTime(2025, 1, 1, 8, 55, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000004"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334404"),
                             Status = "Inactive"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000009"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000001"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789009"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c1"),
                             DeviceType = "VDI",
                             Hostname = "VDI-IT-01",
                             LastSeen = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000008"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334408"),
                             Status = "Active"
                         },
                         new
                         {
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000010"),
-                            DepartmentId = new Guid("40000000-0000-0000-0000-000000000005"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-12345678900a"),
+                            DepartmentId = new Guid("d4a1f530-23a7-4a8a-9b8c-11aa22bb33c5"),
                             DeviceType = "Laptop",
                             Hostname = "LAPTOP-SALES-01",
                             LastSeen = new DateTime(2025, 1, 1, 9, 45, 0, 0, DateTimeKind.Utc),
-                            OwnerUserId = new Guid("30000000-0000-0000-0000-000000000006"),
+                            OwnerUserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334406"),
                             Status = "Active"
                         });
                 });
@@ -328,112 +328,112 @@ namespace AssignmentsInventoryMicroService.Migrations
                     b.HasData(
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000001"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000001"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000001"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789001"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000001"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc01"),
                             InstallDate = new DateTime(2024, 10, 3, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 9, 10, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Version = "Microsoft 365 Apps"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000002"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000002"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000002"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789002"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000002"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc02"),
                             InstallDate = new DateTime(2024, 10, 23, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 9, 20, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Version = "Microsoft 365 Apps"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000003"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000003"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000003"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789003"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000008"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc08"),
                             InstallDate = new DateTime(2024, 11, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 8, 30, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7707"),
                             Version = "Power BI Desktop"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000004"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000004"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789004"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000001"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc01"),
                             InstallDate = new DateTime(2024, 9, 3, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 8, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Version = "Microsoft 365 Apps"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000005"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000005"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000005"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789005"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000009"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc09"),
                             InstallDate = new DateTime(2024, 7, 5, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 7, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000008"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7708"),
                             Version = "Jira Server 9.0"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000006"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000006"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000006"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789006"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000005"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc05"),
                             InstallDate = new DateTime(2024, 6, 15, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2024, 12, 31, 21, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7704"),
                             Version = "SQL Server 2019"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000007"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000007"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000007"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789007"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000004"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc04"),
                             InstallDate = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 9, 5, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000003"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7703"),
                             Version = "VS 2022 Enterprise"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000008"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000008"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000008"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789008"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000003"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc03"),
                             InstallDate = new DateTime(2024, 12, 17, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 8, 55, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000002"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7702"),
                             Version = "Photoshop 2024"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000009"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000009"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-000000000009"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789009"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000007"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc07"),
                             InstallDate = new DateTime(2024, 11, 17, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000006"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7706"),
                             Version = "Slack Desktop"
                         },
                         new
                         {
-                            InstallationId = new Guid("50000000-0000-0000-0000-000000000010"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000010"),
+                            InstallationId = new Guid("c1d2e3f4-1111-4a2b-9c3d-00000000000a"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-12345678900a"),
                             Discovered = true,
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000006"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc06"),
                             InstallDate = new DateTime(2024, 12, 12, 9, 0, 0, 0, DateTimeKind.Utc),
                             LastSeen = new DateTime(2025, 1, 1, 9, 45, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000005"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7705"),
                             Version = "Zoom Client 5.x"
                         });
                 });
@@ -475,108 +475,108 @@ namespace AssignmentsInventoryMicroService.Migrations
                     b.HasData(
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000001"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000001"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000001"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789001"),
                             DurationSeconds = 5400,
                             EventType = "session_start",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
-                            SessionId = new Guid("71000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
+                            SessionId = new Guid("91000000-0000-0000-0000-000000000001"),
                             Timestamp = new DateTime(2025, 1, 1, 7, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000001")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334401")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000002"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000002"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000002"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789002"),
                             DurationSeconds = 3600,
                             EventType = "session_start",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
-                            SessionId = new Guid("71000000-0000-0000-0000-000000000002"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
+                            SessionId = new Guid("91000000-0000-0000-0000-000000000002"),
                             Timestamp = new DateTime(2025, 1, 1, 6, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000002")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334402")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000003"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000003"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000003"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789003"),
                             DurationSeconds = 900,
                             EventType = "report_refresh",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7707"),
                             Timestamp = new DateTime(2025, 1, 1, 5, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000007")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334407")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000004"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000004"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000004"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789004"),
                             DurationSeconds = 2700,
                             EventType = "session_start",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
-                            SessionId = new Guid("71000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
+                            SessionId = new Guid("91000000-0000-0000-0000-000000000004"),
                             Timestamp = new DateTime(2025, 1, 1, 4, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000003")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334403")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000005"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000006"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000005"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789006"),
                             DurationSeconds = 7200,
                             EventType = "db_maintenance",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7704"),
                             Timestamp = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000004")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334404")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000006"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000007"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000006"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789007"),
                             DurationSeconds = 1200,
                             EventType = "build_solution",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000003"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7703"),
                             Timestamp = new DateTime(2025, 1, 1, 7, 30, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000005")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334405")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000007"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000010"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000007"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-12345678900a"),
                             DurationSeconds = 3600,
                             EventType = "meeting_join",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000005"),
-                            SessionId = new Guid("71000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7705"),
+                            SessionId = new Guid("91000000-0000-0000-0000-000000000007"),
                             Timestamp = new DateTime(2025, 1, 1, 8, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000006")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334406")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000008"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000010"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000008"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-12345678900a"),
                             DurationSeconds = 1800,
                             EventType = "chat_activity",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000009"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7709"),
                             Timestamp = new DateTime(2025, 1, 1, 8, 30, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000009")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334409")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000009"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000009"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-000000000009"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789009"),
                             DurationSeconds = 300,
                             EventType = "message_post",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000006"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7706"),
                             Timestamp = new DateTime(2024, 12, 30, 9, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000008")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334408")
                         },
                         new
                         {
-                            UsageEventId = new Guid("70000000-0000-0000-0000-000000000010"),
-                            DeviceId = new Guid("00000000-0000-0000-0000-000000000004"),
+                            UsageEventId = new Guid("dd11ee22-ff33-44aa-9900-00000000000a"),
+                            DeviceId = new Guid("f1aa2b3c-4d5e-4678-9a0b-123456789004"),
                             DurationSeconds = 1800,
                             EventType = "session_start",
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
-                            SessionId = new Guid("71000000-0000-0000-0000-000000000010"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
+                            SessionId = new Guid("91000000-0000-0000-0000-000000000010"),
                             Timestamp = new DateTime(2024, 12, 22, 9, 0, 0, 0, DateTimeKind.Utc),
-                            UserId = new Guid("30000000-0000-0000-0000-000000000010")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-00112233440a")
                         });
                 });
 
@@ -618,114 +618,114 @@ namespace AssignmentsInventoryMicroService.Migrations
                     b.HasData(
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000001"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000001"),
                             AssignedAt = new DateTime(2024, 9, 3, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000001"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc01"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000001")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334401")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000002"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000002"),
                             AssignedAt = new DateTime(2024, 9, 23, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000002"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc02"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 30, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000002")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334402")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000003"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000003"),
                             AssignedAt = new DateTime(2024, 10, 13, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000008"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc08"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 22, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000007"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7707"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000007")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334407")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000004"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000004"),
                             AssignedAt = new DateTime(2024, 10, 3, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000001"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc01"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 17, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000003")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334403")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000005"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000005"),
                             AssignedAt = new DateTime(2024, 6, 15, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000005"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc05"),
                             ExemptFlag = true,
                             LastUsedAt = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000004"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7704"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000004")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334404")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000006"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000006"),
                             AssignedAt = new DateTime(2024, 11, 2, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000004"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc04"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000003"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7703"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000005")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334405")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000007"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000007"),
                             AssignedAt = new DateTime(2024, 11, 22, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000006"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc06"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 31, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000005"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7705"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000006")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334406")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000008"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000008"),
                             AssignedAt = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000010"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc0a"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 29, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000009"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7709"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000009")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334409")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000009"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-000000000009"),
                             AssignedAt = new DateTime(2024, 10, 23, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000007"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc07"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 12, 25, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000006"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7706"),
                             Status = "Active",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000008")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-001122334408")
                         },
                         new
                         {
-                            AssignmentId = new Guid("60000000-0000-0000-0000-000000000010"),
+                            AssignmentId = new Guid("aa11bb22-cc33-44dd-8855-00000000000a"),
                             AssignedAt = new DateTime(2024, 7, 5, 9, 0, 0, 0, DateTimeKind.Utc),
-                            EntitlementId = new Guid("20000000-0000-0000-0000-000000000001"),
+                            EntitlementId = new Guid("b3c4d5e6-7788-49aa-bbcc-8899aabbcc01"),
                             ExemptFlag = false,
                             LastUsedAt = new DateTime(2024, 10, 3, 9, 0, 0, 0, DateTimeKind.Utc),
-                            ProductId = new Guid("10000000-0000-0000-0000-000000000001"),
+                            ProductId = new Guid("a8b6c3de-1011-4f2c-94aa-55bb66cc7701"),
                             RevokedAt = new DateTime(2024, 12, 2, 9, 0, 0, 0, DateTimeKind.Utc),
                             Status = "Revoked",
-                            UserId = new Guid("30000000-0000-0000-0000-000000000010")
+                            UserId = new Guid("e2f7b1c0-9a10-4ce3-bf21-00112233440a")
                         });
                 });
 
