@@ -1,0 +1,6 @@
+@CatalogLicensingDbService_HostAddress = http://localhost:5047
+
+GET {{CatalogLicensingDbService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
