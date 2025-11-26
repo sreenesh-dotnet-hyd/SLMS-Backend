@@ -1,15 +1,28 @@
+using AssignmentsInventoryMicroService.Data;
+using Microsoft.EntityFrameworkCore;
+using System.Text.Json.Serialization;
+
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
+builder.Services.AddControllers()
+    .AddJsonOptions(opts =>
+    {
+        // avoid object cycle issues
+        opts.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles;
+    });
 
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// SQL Server – code first
+builder.Services.AddDbContext<AssignmentsInventoryDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AssignmentsInventoryDb")));
+
+// TODO: register repositories & services (shown below)
+//builder.Services.AddScoped<IDeviceRepository, DeviceRepository>();
+
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
@@ -17,9 +30,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
 app.UseAuthorization();
-
 app.MapControllers();
 
 app.Run();
